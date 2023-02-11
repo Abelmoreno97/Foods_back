@@ -25,7 +25,7 @@ const shorterArray = (array) =>
 // trae toda la info de la api
 const Main = async () => {
   const results = await axios.get(
-    `https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&addRecipeInformation=true&number=100`
+    `https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&addRecipeInformation=true&number=25`
   );
   return results.data.results;
 };
